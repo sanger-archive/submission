@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/sanger_authentication"]
+	path = vendor/plugins/sanger_authentication
+	url = ssh://git.internal.sanger.ac.uk/repos/git/psd/sanger_authentication.git

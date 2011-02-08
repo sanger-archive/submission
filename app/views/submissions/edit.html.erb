@@ -1,0 +1,11 @@
+<h1>Edit submission <%= @submission.uuid %></h1>
+
+<%= puts @submission.to_yaml %>
+
+<%= semantic_form_for(:submission, :url => submission_path(@submission.uuid), :html => { :method => "put" }) do |form| %>
+  <%= form.input :assets,  :as => :text %>
+  <%= form.input :request_options,  :as => :text %>
+  <%= form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+<% end %>

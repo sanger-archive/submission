@@ -1,0 +1,8 @@
+<%= semantic_form_for(:submission, :url => submissions_path) do |form| %>
+  <%= form.input :project, :collection => Project.find(:all, :order =>  'name') %>
+  <%= form.input :study, :collection => Study.find(:all, :order =>  'name') %>
+  <%= form.input :submission_template, :collection => SubmissionTemplate.find(:all, :order =>  'name') %>
+  <%= form.buttons do %>
+        <%= form.commit_button %>
+  <% end %>
+<% end %>

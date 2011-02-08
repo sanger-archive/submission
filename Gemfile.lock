@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/sanger/sequencescape-client-api.git
-  revision: 6baf65f9108b10e40e39ff148843b10e224c48da
+  revision: 8486f3e90197cef97d016ecc1f839050d4374b4b
+  ref: 8486f3e
   specs:
     sequencescape-client-api (0.0.1)
       activesupport (~> 3.0.0)
@@ -63,7 +64,7 @@ GEM
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
     culerity (0.2.15)
-    database_cleaner (0.6.1)
+    database_cleaner (0.6.2)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -91,6 +92,7 @@ GEM
     mime-types (1.16)
     mocha (0.9.11)
       rake
+    mysql (2.8.1)
     nokogiri (1.4.4)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -143,6 +145,7 @@ DEPENDENCIES
   formtastic
   launchy
   mocha
+  mysql
   nokogiri
   rails (= 3.0.3)
   sequencescape-client-api!

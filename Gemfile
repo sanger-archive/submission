@@ -6,10 +6,10 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'nokogiri'
 gem "formtastic"
-#gem "mysql"
+gem "mysql"
 gem "uuidtools"
 gem "compass"
-gem 'sequencescape-client-api', :git => 'https://github.com/sanger/sequencescape-client-api.git'
+gem 'sequencescape-client-api', :git => 'https://github.com/sanger/sequencescape-client-api.git', :require => 'sequencescape', :ref => '8486f3e'
 
 group :development do
 #   gem 'ruby-debug19'
