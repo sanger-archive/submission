@@ -9,10 +9,10 @@ gem "formtastic"
 gem "mysql"
 gem "uuidtools"
 gem "compass"
-gem 'sequencescape-client-api', :git => 'https://github.com/sanger/sequencescape-client-api.git', :require => 'sequencescape', :ref => '8486f3e'
+gem 'sequencescape-client-api', :git => 'https://github.com/sanger/sequencescape-client-api.git', :require => 'sequencescape', :ref => 'fe4e26f'
 
 group :development do
-#   gem 'ruby-debug19'
+   gem 'ruby-debug19'
 end
 
 group :test do

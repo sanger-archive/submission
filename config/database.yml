@@ -5,7 +5,7 @@ development:
   pool: 5
   timeout: 5000
   
-development_warehouse_two: &warehouse
+development_warehouse_two:
   adapter: mysql
   username: root
   password:

@@ -1,2 +1,10 @@
+<%= link_to 'Bulk create Plate submissions', new_bulk_plate_path %>
+<%= link_to 'Create new Plate submission', new_plate_path %>
 
-<%= link_to 'Create a new submission', new_submission_path %>
+<h2>Submissions</h2>
+<ul>
+<% @local_submissions.each do |local_submission| %>
+  <li><%= link_to local_submission.uuid,  submission_path(local_submission.uuid) %></li>
+<% end %></ul>
+
+

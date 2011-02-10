@@ -15,6 +15,7 @@ Submission::Application.routes.draw do
   
   resources :submissions
   resources :plates
+  resources :bulk_plates
 
   # Sample resource route with options:
   #   resources :products do

@@ -1,8 +1,9 @@
 class SubmissionsController < ApplicationController
   def index
+    @local_submissions = LocalSubmission.all
     Populate.new.parse_models(api)
   end
-
+  
   def new
   end
 
@@ -35,6 +36,10 @@ class SubmissionsController < ApplicationController
         format.html { redirect_to(submissions_path) }
       end
     end
+  end
+  
+  def show
+    @submission = api.submission.find(params[:id])
   end
 
 end

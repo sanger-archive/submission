@@ -1,10 +1,6 @@
 class PlatesController < ApplicationController
   include Submission::Creation
 
-  def index
-    @local_submissions = LocalSubmission.all
-  end
-
   def new
   end
 
@@ -18,16 +14,12 @@ class PlatesController < ApplicationController
 
     respond_to do |format|
       if submission.submit!
-        format.html { redirect_to(edit_submission_path(submission.uuid)) }
+        format.html { redirect_to(submission_path(submission.uuid)) }
       else
         flash[:error] = 'Failed to create submission'
         format.html { redirect_to(submissions_path) }
       end
     end
-  end
-  
-  def show
-    @submission = api.submission.find(params[:id])
   end
 
 end
